@@ -4,19 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e542f5b7-c524-45f8-b5f7-ab60f0fcb97d" name="Changes" comment="1 commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e542f5b7-c524-45f8-b5f7-ab60f0fcb97d" name="Changes" comment="First amendments">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CourierId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CourierLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CourierRemoval.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CourierDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CourierDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Orders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CourierCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CourierCreationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CourierLogInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CourierLogInTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/OrderCreatingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrderCreatingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/OrderListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrderListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/1874874a-58f6-4434-bfb8-6267603392d3-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/2a7b7d4c-1e5b-4418-9558-fbbd68b4a28f-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/2c334bb6-2255-4f4e-80c3-35b4894a7995-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/3cca118c-e340-4f8f-9cb6-c6ebc11eeb66-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/3d13406b-8c0f-4e88-a76c-31bdebe8a74f-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/41deb13e-2f70-4506-be10-eae967a15deb-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/52b35cba-d2c6-4d27-8bf4-129e39235c65-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/5d714c27-5015-4a1b-b1d4-b2efa7c3311d-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/689394ff-d880-4ecb-8e8e-529e9b9f3136-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/6acfcdd4-42a6-449f-9a47-b5774c0ae2cc-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/7c83d706-8c42-43a4-95ca-79044de49649-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/80472a37-577b-4f27-985b-bd9f8e591dcc-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/9ab5c71d-f0d1-4f1c-9ddc-38bb7c5adbeb-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/a97173ef-cf8f-4ab3-9478-6008446ddad1-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/cea66c60-949a-47fb-ab43-c39fb767a016-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/e9e8323c-ae75-4dcb-ae4b-5eead2f9ebfa-result.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +157,15 @@
       <option name="presentableId" value="Default" />
       <updated>1725952156976</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First amendments">
+      <option name="closed" value="true" />
+      <created>1725995351394</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725995351394</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,7 +181,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1 commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="1 commit" />
+    <MESSAGE value="First amendments" />
+    <option name="LAST_COMMIT_MESSAGE" value="First amendments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
