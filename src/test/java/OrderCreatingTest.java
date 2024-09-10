@@ -8,14 +8,11 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
 import static io.restassured.RestAssured.given;
 
 @RunWith(Parameterized.class)
 public class OrderCreatingTest {
-
     private final Orders orders;
-
     public OrderCreatingTest (Orders orders) {
         this.orders = orders;
     }
@@ -34,7 +31,6 @@ public class OrderCreatingTest {
     @DisplayName("Создание заказа")
     @Description("Проверка создания заказа с различными данными")
     public void checkCreateOrder() {
-
         Response response =
                 given()
                         .header("Content-type", "application/json")
@@ -46,7 +42,5 @@ public class OrderCreatingTest {
                 .and()
                 .statusCode(201);
         System.out.println("Заказ создан");
-
     }
-
 }

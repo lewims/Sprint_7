@@ -9,8 +9,5 @@
         <module name="Sprint_7." />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Sprint_7." target="22" />
-    </bytecodeTargetLevel>
   </component>
 </project>

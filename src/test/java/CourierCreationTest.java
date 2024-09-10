@@ -3,21 +3,18 @@ import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.example.CourierDetails;
+import org.example.CourierRemoval;
 import org.hamcrest.Matchers;
 import org.junit.Before;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
-
-
 import io.restassured.response.Response;
-
 
 public class CourierCreationTest {
 
     @Before
     public void setUp() {
         RestAssured.baseURI = "https://qa-scooter.praktikum-services.ru/";
-
     }
 
     @Test
@@ -39,9 +36,12 @@ public class CourierCreationTest {
                 .and()
                 .statusCode(201);
         System.out.println("Новый курьер создан");
+        CourierRemoval courierRemoval = new CourierRemoval();
+        courierRemoval.courierRemovalMethod(courierDetails)
+                .then().assertThat().body("ok", Matchers.is(true))
+                .and()
+                .statusCode(200);
     }
-
-
 
     @Test
     @DisplayName("Создание курьера без логина")
@@ -137,15 +137,9 @@ public class CourierCreationTest {
                  .body(secondCourierDetails)
                  .when()
                  .post("/api/v1/courier");
-
-
-
-        response1.then().assertThat().body("message", Matchers.is("Этот логин уже используется. Попробуйте другой."))
+         response1.then().assertThat().body("message", Matchers.is("Этот логин уже используется. Попробуйте другой."))
                 .and()
                 .statusCode(409);
-
-        System.out.println("Нельзя создать курьера с уже существующим Логином");
+         System.out.println("Нельзя создать курьера с уже существующим Логином");
     }
-
-
 }

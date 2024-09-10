@@ -1,5 +1,7 @@
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import org.example.CourierLogin;
+import org.example.CourierRemoval;
 import org.junit.Before;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
@@ -10,15 +12,13 @@ import org.junit.Test;
 import static io.restassured.RestAssured.given;
 
 public class CourierLogInTest {
-
-    String login = RandomStringUtils.randomAlphanumeric(2,15);
-    String password = RandomStringUtils.randomAlphanumeric(7,15);
+    String login = RandomStringUtils.randomAlphanumeric(2, 15);
+    String password = RandomStringUtils.randomAlphanumeric(7, 15);
     CourierDetails courierDetails = new CourierDetails(login, password);
     CourierDetails courierDetailsWithoutLogin = new CourierDetails("", password);
     CourierDetails courierDetailsWithoutPassword = new CourierDetails(login, "");
     CourierDetails courierDetailsWithIncorrectLogin = new CourierDetails("ЛаширсКвы", password);
     CourierDetails courierDetailsWithIncorrectPassword = new CourierDetails(login, "9999999");
-
 
     @Before
     public void setUp() {
@@ -33,108 +33,70 @@ public class CourierLogInTest {
         response.then().assertThat().body("ok", Matchers.is(true))
                 .and()
                 .statusCode(201);
-
     }
-
-
 
     @Test
     @DisplayName("Логин Курьера")
     @Description("Проверка авторизации курьера с корректным логином и паролем")
     public void loginCourierTest() {
-
-
-
-        Response response1 =
-                given()
-                        .header("Content-type", "application/json")
-                        .and()
-                        .body(courierDetails)
-                        .when()
-                        .post("/api/v1/courier/login");
-        response1.then().assertThat().body("id", Matchers.notNullValue())
+        CourierLogin courierLogin = new CourierLogin();
+        courierLogin.courierLoginMethod(courierDetails)
+                .then().assertThat().body("id", Matchers.notNullValue())
                 .and()
                 .statusCode(200);
         System.out.println("Вход успешно выполняется при вводе корректных логина и пароля");
+        CourierRemoval courierRemoval = new CourierRemoval();
+        courierRemoval.courierRemovalMethod(courierDetails)
+                .then().assertThat().body("ok", Matchers.is(true))
+                .and()
+                .statusCode(200);
     }
 
     @Test
-    @DisplayName("Вход в учётную запись курьера без ввода логина ")
+    @DisplayName("Вход в учётную запись курьера без ввода логина")
     @Description("Проверка авторизации курьера без ввода логина")
     public void loginCourierWithoutLoginTest() {
-
-
-        Response response1 =
-                given()
-                        .header("Content-type", "application/json")
-                        .and()
-                        .body(courierDetailsWithoutLogin)
-                        .when()
-                        .post("/api/v1/courier/login");
-        response1.then().assertThat().body("message", Matchers.is("Недостаточно данных для входа"))
+        CourierLogin courierLogin = new CourierLogin();
+        courierLogin.courierLoginMethod(courierDetailsWithoutLogin).
+                then().assertThat().body("message", Matchers.is("Недостаточно данных для входа"))
                 .and()
                 .statusCode(400);
-
         System.out.println("Вход в учётную запись курьера без ввода логина не осуществить");
-    }
-
-    @Test
-    @DisplayName("Вход в учётную запись курьера без ввода логина ")
-    @Description("Проверка авторизации курьера без ввода логина")
-    public void loginCourierWithoutPasswordTest() {
-
-
-        Response response1 =
-                given()
-                        .header("Content-type", "application/json")
-                        .and()
-                        .body(courierDetailsWithoutPassword)
-                        .when()
-                        .post("/api/v1/courier/login");
-        response1.then().assertThat().body("message", Matchers.is("Недостаточно данных для входа"))
-                .and()
-                .statusCode(400);
-
-        System.out.println("Вход в учётную запись курьера без ввода пароля не осуществить");
-    }
-
-    @Test
-    @DisplayName("Вход в учётную запись курьера без ввода логина ")
-    @Description("Проверка авторизации курьера без ввода логина")
-    public void loginCourierWithIncorrectLoginTest() {
-
-
-        Response response1 =
-                given()
-                        .header("Content-type", "application/json")
-                        .and()
-                        .body(courierDetailsWithIncorrectLogin)
-                        .when()
-                        .post("/api/v1/courier/login");
-        response1.then().assertThat().body("message", Matchers.is("Учетная запись не найдена"))
-                .and()
-                .statusCode(404);
-
-        System.out.println("При вводе незарегистрированного логина вход не осуществляется");
     }
 
     @Test
     @DisplayName("Вход в учётную запись курьера без ввода пароля")
     @Description("Проверка авторизации курьера без ввода пароля")
-    public void loginCourierWithIncorrectPasswordTest() {
+    public void loginCourierWithoutPasswordTest() {
+        CourierLogin courierLogin = new CourierLogin();
+        courierLogin.courierLoginMethod(courierDetailsWithoutPassword)
+                .then().assertThat().body("message", Matchers.is("Недостаточно данных для входа"))
+                .and()
+                .statusCode(400);
+        System.out.println("Вход в учётную запись курьера без ввода пароля не осуществить");
+    }
 
-
-        Response response1 =
-                given()
-                        .header("Content-type", "application/json")
-                        .and()
-                        .body(courierDetailsWithIncorrectPassword)
-                        .when()
-                        .post("/api/v1/courier/login");
-        response1.then().assertThat().body("message", Matchers.is("Учетная запись не найдена"))
+    @Test
+    @DisplayName("Вход в учётную запись с вводом неверного логина")
+    @Description("Проверка авторизации курьера при вводе неверного логина")
+    public void loginCourierWithIncorrectLoginTest() {
+        CourierLogin courierLogin = new CourierLogin();
+        courierLogin.courierLoginMethod(courierDetailsWithIncorrectLogin)
+                .then().assertThat().body("message", Matchers.is("Учетная запись не найдена"))
                 .and()
                 .statusCode(404);
+        System.out.println("При вводе неверного логина вход не осуществляется");
+    }
 
+    @Test
+    @DisplayName("Вход в учётную запись с вводом неправильного пароля")
+    @Description("Проверка авторизации курьера при вводе неправильного пароля")
+    public void loginCourierWithIncorrectPasswordTest() {
+        CourierLogin courierLogin = new CourierLogin();
+        courierLogin.courierLoginMethod(courierDetailsWithIncorrectPassword)
+                .then().assertThat().body("message", Matchers.is("Учетная запись не найдена"))
+                .and()
+                .statusCode(404);
         System.out.println("При вводе неверного пароля вход не осуществляется");
     }
 
@@ -144,23 +106,12 @@ public class CourierLogInTest {
     public void loginUnregisteredCourierTest() {
         String login = RandomStringUtils.randomAlphanumeric(2,15);
         String password = RandomStringUtils.randomAlphanumeric(7,15);
-
-CourierDetails unregisteredCourierDetails1 = new CourierDetails(login, password);
-
-
-        Response response1 =
-                given()
-                        .header("Content-type", "application/json")
-                        .and()
-                        .body(unregisteredCourierDetails1)
-                        .when()
-                        .post("/api/v1/courier/login");
-        response1.then().assertThat().body("message", Matchers.is("Учетная запись не найдена"))
+        CourierDetails unregisteredCourierDetails1 = new CourierDetails(login, password);
+        CourierLogin courierLogin = new CourierLogin();
+        courierLogin.courierLoginMethod(unregisteredCourierDetails1)
+                .then().assertThat().body("message", Matchers.is("Учетная запись не найдена"))
                 .and()
                 .statusCode(404);
-
         System.out.println("Авторизация незарегистрированного пользователя не осуществляется");
     }
-
-
 }

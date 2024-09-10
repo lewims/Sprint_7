@@ -7,6 +7,9 @@ public class Orders {
     private String metroStation;
     private String phone;
     private int rentTime;
+    private String deliveryDate;
+    private String comment;
+    private String[] color;
 
     public String[] getColor() {
         return color;
@@ -79,10 +82,6 @@ public class Orders {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-
-    private String deliveryDate;
-    private String comment;
-    private String[] color;
 
     public Orders(String firstName, String lastName, String address, String metroStation, String phone, int rentTime, String deliveryDate, String comment, String[] color) {
         this.firstName = firstName;

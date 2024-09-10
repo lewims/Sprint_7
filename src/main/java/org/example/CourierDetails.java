@@ -6,28 +6,18 @@ private String password;
 private String firstName;
 
     public CourierDetails() {
-
     }
-
-
-
-
-
-
 
     public CourierDetails(String login, String password) {
         this.login = login;
         this.password = password;
     }
 
-
     public CourierDetails(String login, String password, String firstName) {
         this.login = login;
         this.password = password;
         this.firstName = firstName;
     }
-
-
 
     public String getFirstName() {
         return firstName;
@@ -52,8 +42,4 @@ private String firstName;
     public void setLogin(String login) {
         this.login = login;
     }
-
-
-
-
 }

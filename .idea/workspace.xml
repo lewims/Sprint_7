@@ -5,13 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e542f5b7-c524-45f8-b5f7-ab60f0fcb97d" name="Changes" comment="1 commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CourierDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CourierDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CourierCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CourierCreationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CourierLogInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CourierLogInTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/OrderCreatingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrderCreatingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/OrderListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrderListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -21,14 +38,45 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2lrxmirsxbWJUUSrcvpDEc7Cs6z" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.CourierCreationTest.executor": "Run",
+    "JUnit.CourierLogInTest.executor": "Run",
+    "JUnit.CourierLogInTest.loginCourierTest.executor": "Run",
+    "JUnit.OrderListTest.executor": "Run",
+    "JUnit.java in Sprint_7..executor": "Run",
+    "Maven. [clean,test].executor": "Run",
+    "Maven.Sprint_7. [clean,test].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "develop2",
-    "last_opened_file_path": "C:/Users/lewims/Desktop/Новая папка/Sprint_7"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/lewims/Desktop/Sprint_77",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lewims\Desktop\Sprint_77" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean test" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.CourierCreationTest">
     <configuration name="CourierCreationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_7." />
       <option name="PACKAGE_NAME" value="" />
@@ -47,11 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderCreatingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CourierLogInTest.loginCourierTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_7." />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="OrderCreatingTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="CourierLogInTest" />
+      <option name="METHOD_NAME" value="loginCourierTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -65,16 +114,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="java in Sprint_7." type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7." />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OrderListTest" />
-        <item itemvalue="JUnit.OrderCreatingTest" />
-        <item itemvalue="JUnit.CourierLogInTest" />
         <item itemvalue="JUnit.CourierCreationTest" />
+        <item itemvalue="JUnit.CourierLogInTest" />
+        <item itemvalue="JUnit.CourierLogInTest.loginCourierTest" />
+        <item itemvalue="JUnit.java in Sprint_7." />
+        <item itemvalue="JUnit.OrderListTest" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="1 commit">
+      <option name="closed" value="true" />
+      <created>1725832142888</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1725832142888</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e542f5b7-c524-45f8-b5f7-ab60f0fcb97d" name="Changes" comment="1 commit" />
+      <created>1725952156976</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725952156976</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,5 +162,34 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="1 commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/CourierLogin.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/CourierLogin.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/CourierLogInTest.java</url>
+          <line>105</line>
+          <properties class="CourierLogInTest" method="loginUnregisteredCourierTest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
