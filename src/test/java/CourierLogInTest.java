@@ -2,6 +2,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.example.CourierLogin;
 import org.example.CourierRemoval;
+import org.junit.After;
 import org.junit.Before;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
@@ -34,6 +35,14 @@ public class CourierLogInTest {
                 .and()
                 .statusCode(201);
     }
+@After
+public void CourierRemovalAfterLogin() {
+    CourierRemoval courierRemoval = new CourierRemoval();
+    courierRemoval.courierRemovalMethod(courierDetails)
+            .then().assertThat().body("ok", Matchers.is(true))
+            .and()
+            .statusCode(200);
+}
 
     @Test
     @DisplayName("Логин Курьера")
@@ -45,11 +54,6 @@ public class CourierLogInTest {
                 .and()
                 .statusCode(200);
         System.out.println("Вход успешно выполняется при вводе корректных логина и пароля");
-        CourierRemoval courierRemoval = new CourierRemoval();
-        courierRemoval.courierRemovalMethod(courierDetails)
-                .then().assertThat().body("ok", Matchers.is(true))
-                .and()
-                .statusCode(200);
     }
 
     @Test

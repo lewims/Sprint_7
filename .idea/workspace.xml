@@ -4,27 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e542f5b7-c524-45f8-b5f7-ab60f0fcb97d" name="Changes" comment="First amendments">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CourierId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CourierLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CourierRemoval.java" afterDir="false" />
+    <list default="true" id="e542f5b7-c524-45f8-b5f7-ab60f0fcb97d" name="Changes" comment="First amendments &#10;new classes added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/1874874a-58f6-4434-bfb8-6267603392d3-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/2a7b7d4c-1e5b-4418-9558-fbbd68b4a28f-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/2c334bb6-2255-4f4e-80c3-35b4894a7995-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/3cca118c-e340-4f8f-9cb6-c6ebc11eeb66-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/3d13406b-8c0f-4e88-a76c-31bdebe8a74f-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/41deb13e-2f70-4506-be10-eae967a15deb-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/52b35cba-d2c6-4d27-8bf4-129e39235c65-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/5d714c27-5015-4a1b-b1d4-b2efa7c3311d-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/689394ff-d880-4ecb-8e8e-529e9b9f3136-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/6acfcdd4-42a6-449f-9a47-b5774c0ae2cc-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/7c83d706-8c42-43a4-95ca-79044de49649-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/80472a37-577b-4f27-985b-bd9f8e591dcc-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/9ab5c71d-f0d1-4f1c-9ddc-38bb7c5adbeb-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/a97173ef-cf8f-4ab3-9478-6008446ddad1-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/cea66c60-949a-47fb-ab43-c39fb767a016-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/e9e8323c-ae75-4dcb-ae4b-5eead2f9ebfa-result.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,34 +27,34 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2lrxmirsxbWJUUSrcvpDEc7Cs6z" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.CourierCreationTest.executor": "Run",
-    "JUnit.CourierLogInTest.executor": "Run",
-    "JUnit.CourierLogInTest.loginCourierTest.executor": "Run",
-    "JUnit.OrderListTest.executor": "Run",
-    "JUnit.java in Sprint_7..executor": "Run",
-    "Maven. [clean,test].executor": "Run",
-    "Maven.Sprint_7. [clean,test].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "develop2",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/lewims/Desktop/Sprint_77",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.CourierCreationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CourierLogInTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CourierLogInTest.loginCourierTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderListTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.java in Sprint_7..executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [clean,test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Sprint_7. [clean,test].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop2&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lewims/Desktop/Sprint_77&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\lewims\Desktop\Sprint_77" />
@@ -84,7 +65,7 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CourierCreationTest">
+  <component name="RunManager" selected="JUnit.CourierLogInTest">
     <configuration name="CourierCreationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_7." />
       <option name="PACKAGE_NAME" value="" />
@@ -132,8 +113,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CourierCreationTest" />
         <item itemvalue="JUnit.CourierLogInTest" />
+        <item itemvalue="JUnit.CourierCreationTest" />
         <item itemvalue="JUnit.CourierLogInTest.loginCourierTest" />
         <item itemvalue="JUnit.java in Sprint_7." />
         <item itemvalue="JUnit.OrderListTest" />
@@ -165,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725995351394</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="First amendments &#10;new classes added">
+      <option name="closed" value="true" />
+      <created>1725995837101</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725995837101</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,7 +171,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1 commit" />
     <MESSAGE value="First amendments" />
-    <option name="LAST_COMMIT_MESSAGE" value="First amendments" />
+    <MESSAGE value="First amendments &#10;new classes added" />
+    <option name="LAST_COMMIT_MESSAGE" value="First amendments &#10;new classes added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
